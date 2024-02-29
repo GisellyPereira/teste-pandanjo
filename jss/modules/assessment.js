@@ -2,7 +2,7 @@ export default class Assessment {
     constructor() {
       this.container = document.getElementById('star-container');
       this.stars = [];
-      const starSize = 20; // Tamanho desejado para as estrelas
+      const starSize = 17;
       for (let i = 0; i < 5; i++) {
         const star = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
         star.setAttribute('class', 'svg-star');

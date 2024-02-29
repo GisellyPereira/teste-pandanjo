@@ -1,8 +1,6 @@
 export default class ImgEvidence {
   constructor() {
-    // Verifica se já existe uma instância de enlargedImageContainer
     this.enlargedImageContainer = document.querySelector(".enlarged-image-container");
-    // Se não existir, cria uma nova div
     if (!this.enlargedImageContainer) {
       this.enlargedImageContainer = document.createElement("div");
       this.enlargedImageContainer.classList.add("enlarged-image-container");
