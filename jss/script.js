@@ -6,6 +6,7 @@ import CarrosselSlide from './modules/carrossel-slide.js';
 import Mask from './modules/mask.js';
 import Dropdowns from './modules/dropdowns.js';
 import Debounce from './modules/debounce.js';
+import Slider from './modules/slider.js';
 
 
 
@@ -20,6 +21,8 @@ const carrossel = new CarrosselSlide();
 const mask = new Mask();
 const dropdowns = new Dropdowns();
 const debounce = new Debounce();
+const slider = new Slider();
+slider.init();
 
 
 
