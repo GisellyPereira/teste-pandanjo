@@ -15,17 +15,19 @@
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 10px;
+    left: 10px;
+    right: 10px;
 }
 
 .discount p {
-    background-color: #ff0000;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 0;
-    border-radius: 0 0 10px 0;
+    background-color: #7A306C;
+    color: #FFEAFB;
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 7px;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .product-item img {
