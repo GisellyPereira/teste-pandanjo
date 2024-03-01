@@ -46,8 +46,5 @@ export default class Assessment {
       });
     }
   
-    init() {
-      console.log("Init function called"); 
-    }
   }
   

@@ -28,8 +28,5 @@ export default class SelectSizes {
         this.sizesContainer.appendChild(button);
       });
     }
-    init() {
-        console.log("Init function called");
-      }
   }
   

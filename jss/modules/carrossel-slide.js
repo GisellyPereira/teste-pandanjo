@@ -30,23 +30,19 @@ export default class CarrosselSlide {
         this.prevY = event.clientY;
         
         if (Math.abs(deltaX) > Math.abs(deltaY)) {
-          // Movimento mais horizontal
           this.imageList.scrollLeft -= deltaX;
         } else {
-          // Movimento mais vertical
           this.imageList.scrollTop -= deltaY;
         }
         
-        event.preventDefault(); // Evita a seleção de texto durante o arrasto
+        event.preventDefault();
       }
     }
   
     mouseWheel(event) {
       if (window.innerWidth <= 700) {
-        // Se a largura da tela for menor ou igual a 700px, ajuste o scroll horizontal
         this.imageList.scrollLeft += event.deltaY;
       } else {
-        // Se for maior que 700px, ajuste o scroll vertical
         this.imageList.scrollTop += event.deltaY;
       }
       event.preventDefault();

@@ -1,5 +1,3 @@
-
-
 body,
 h1,
 h2,
@@ -24,7 +22,7 @@ ul {
 
 body {
   color:#0C1B33;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
   font-family: "IBM Plex Sans", sans-serif;
@@ -34,7 +32,7 @@ body {
 
 
 .menu-ul {
-  width:85%;
+  width:60%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -61,15 +59,17 @@ body {
 .top-content{
   display: flex;
   margin-top: 50px;
+
   
 }
 .description{
-  margin-left: 50px;
+  padding-left: 50px;
+  width: 400px;
 }
 .description-type h1{
   font-weight: 400;
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 .ref{
   color: #9C9C9C;
@@ -97,7 +97,7 @@ body {
 .div-circles {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .blue-circle, .orange-circle, .purple-circle {
@@ -143,11 +143,10 @@ font-weight: 400;
 }
 .size-button{
   background-color: #fff;
-  padding: 10px;
   border: 1px solid #0C1B33;
   border-radius: 5px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   font-size: 17px;
   cursor: pointer;
   color: #000;
@@ -228,7 +227,7 @@ font-weight: 400;
   font-weight: 400;
 }
 
-.container-calculator input{
+.cep-input{
   padding: 10px;
   width: 100px;
   border-radius: 5px;
@@ -248,10 +247,101 @@ font-weight: 400;
   cursor: pointer;
   transition:  0.3s ease, color 0.3s ease; 
 }
+
 .btn-calculator:hover{
   background: #0C1B33;
   color: #fff;
 }
+.container-doubts{
+  margin-top: 30px;
+
+}
+.doubts-list dd {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease; 
+}
+.doubts-list dd.open {
+  max-height: 1500px; 
+}
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease; 
+}
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+}
+dt{
+  font-size: 18px;
+  color: #0C1B33;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   cursor: pointer;
+}
+hr{
+  background-color: #9C9C9C;
+}
+.doubt{
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.answer{
+  font-size: 16px;
+  font-weight: 300;
+}
+.answer span{
+  color: #7A306C;
+  font-weight: 400;
+}
+.div-dropdown-block{
+  display: none;
+}
+.title-details{
+  display: flex;
+  gap: 10px;
+}
+.title-details dt {
+  border-bottom: 1px solid #9C9C9C;
+  margin-bottom: 20px;
+  color: #9C9C9C;
+}
+
+.title-details dt.active {
+  border-bottom: 1px solid #7A306C; /* Adiciona a borda com a cor específica quando ativo */
+  color: #7A306C; /* Altera a cor do texto quando ativo */
+}
+
+.middle-content{
+  display: block;
+  max-width: 68%;
+  margin-top: 5rem;
+}
+.div-composition{
+  display:grid;
+  gap:10px
+}
+.composition-title{
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.middle-content dd {
+  max-height: 0; /* Inicialmente, define a altura como 0 */
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a altura */
+  opacity: 0; /* Configura a opacidade para 0 */
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Adiciona uma transição suave de altura e opacidade */
+}
+.middle-content dd.active {
+  max-height: 1000px; /* Define a altura máxima para mostrar todo o conteúdo */
+  opacity: 1; /* Configura a opacidade para 1 */
+}
+
+
+
 
 
 
@@ -263,6 +353,18 @@ font-weight: 400;
     width:100%;
    
   }
+  .description{
+    padding-left: 0px;
+    width: 100%;
+  }
+  .div-dropdown-block{
+    display: block;
+  }
+  .middle-content{
+    display: none;
+  }
+  
+  
   
 }
 

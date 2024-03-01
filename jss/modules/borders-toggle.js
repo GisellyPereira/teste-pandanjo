@@ -13,9 +13,5 @@ export default class BordersToggle {
       circle.classList.add("selected", "shrunk");
       this.selectedCircle = circle;
     }
-    
-    init() {
-      console.log("Init function called");
-    }
   }
   
