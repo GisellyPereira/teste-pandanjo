@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Blazer Off White",
+        "original_price": "R$ 158,00",
+        "current_price": "R$ 140,70",
+        "obs": "Novo",
+        "image": "imagens/Carrossel Imagem 2.png"
+    },
+    {
+        "name": "Jaqueta oversize",
+        "original_price": "R$ 166,40",
+        "current_price": "R$ 118,50",
+        "obs": "25% off",
+        "image": "imagens/Carrossel Imagem3.png"
+    },
+    {
+        "name": "Calça Wide Leg",
+        "original_price": "R$ 189,65",
+        "current_price": "R$ 136,80",
+        "obs": "Novo",
+        "image": "imagens/Carrossel Imagem4.png"
+    },
+    {
+        "name": "Camisa Jeans com bolsos",
+        "original_price": "R$ 110,00",
+        "current_price": "R$ 93,84",
+        "obs": "Novo",
+        "image": "imagens/Carrossel Imagem5.png"
+    },
+    {
+        "name": "Camisa Xadrez",
+        "original_price": "R$ 110,00",
+        "current_price": "R$ 93,84",
+        "obs": "15% off",
+        "image": "imagens/Carrossel Imagem3.png"
+    },
+    {
+        "name": "Regata Preta",
+        "original_price": "R$ 110,00",
+        "current_price": "R$ 93,84",
+        "obs": "20% off",
+        "image": "imagens/Carrossel Imagem4.png"
+    },
+    {
+        "name": "Blusa de Tricô",
+        "original_price": "R$ 110,00",
+        "current_price": "R$ 93,84",
+        "obs": "Novo",
+        "image": "imagens/Carrossel Imagem 2.png"
+    },
+    {
+        "name": "Vestido Florido",
+        "original_price": "R$ 110,00",
+        "current_price": "R$ 93,84",
+        "obs": "15% off",
+        "image": "imagens/Carrossel Imagem5.png"
+    },
+    {
+        "name": "Shorts Jeans",
+        "original_price": "R$ 110,00",
+        "current_price": "R$ 93,84",
+        "obs": "Novo",
+        "image": "imagens/Carrossel Imagem3.png"
+    }
+]

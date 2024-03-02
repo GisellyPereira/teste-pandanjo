@@ -1,3 +1,5 @@
+import SvgHeart from '../modules/SvgHeat';
+
 export default class ImgEvidence {
   constructor() {
     this.enlargedImageContainer = document.querySelector(".enlarged-image-container");
@@ -17,6 +19,9 @@ export default class ImgEvidence {
     const firstImage = this.imageList[0];
     firstImage.classList.add("selected-image", "shrunk");
     this.showImage(firstImage);
+
+   
+    this.svgHeart = new SvgHeart();
   }
 
   init() {
@@ -29,14 +34,6 @@ export default class ImgEvidence {
         img.classList.add("selected-image", "shrunk");
       });
     });
-
-    const svgHeart = document.querySelector(".svg-heart");
-    if (!svgHeart.hasAttribute("data-clicked")) {
-      svgHeart.setAttribute("data-clicked", true);
-      svgHeart.addEventListener("click", () => {
-        svgHeart.classList.toggle("svg-clicked");
-      });
-    }
 
     this.enlargedImageContainer.addEventListener("click", (event) => {
       event.stopPropagation();
