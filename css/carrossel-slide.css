@@ -4,7 +4,39 @@
 
 .product-recommendation {
     position: relative;
-    width: 100%;
+    margin-top: 10rem;
+
+}
+
+.product-recommendation h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 400;
+    color: #0C1B33;
+    z-index: 1;
+    padding: 5px;
+}
+
+.spacer {
+    position: relative;
+}
+
+.bar-purple {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 5rem;
+    height: 1px;
+    background-color: #7A306C;
+}
+
+.bar-green {
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    width: 5rem;
+    height: 1.5px;
+    background-color: #DBFE87;
 }
 
 .product-list {
@@ -85,13 +117,18 @@
 
 .slide-buttons-container {
     display: flex;
-  }
-  
-  .slide-button {
+}
+
+.slide-button {
     background-color: transparent;
     color: #000;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
+
+
+
+
   
+   
