@@ -4,7 +4,7 @@
 
 .product-recommendation {
     position: relative;
-    margin-top: 10rem;
+    margin-top: 5rem;
 
 }
 
@@ -80,7 +80,6 @@
 }
 
 .product-item img {
-    border: 1px solid #ccc;
     border-radius: 5px;
     max-width: 263px;
     height: 340px;
@@ -127,6 +126,36 @@
     transition: background-color 0.3s ease;
 }
 
+
+@media (max-width: 1150px) {
+    .bar-purple {
+        left: 27%;
+    }
+    .bar-green {
+        right: 27%;
+    }
+    .product-item img {
+        max-width: 214px;
+        height: 280px;
+    }
+    .slide-button {
+        display: none;
+    }
+    .product-recommendation {
+        margin-top: 2rem;
+    
+    }
+}
+
+@media (max-width: 700px) {
+    .bar-purple {
+        left: 12%;
+    }
+    .bar-green {
+        right: 12%;
+    }
+   
+}
 
 
 

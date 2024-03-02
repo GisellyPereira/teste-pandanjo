@@ -311,8 +311,7 @@ hr{
 }
 
 .title-details dt.active {
-  border-bottom: 1px solid #7A306C; /* Adiciona a borda com a cor específica quando ativo */
-  color: #7A306C; /* Altera a cor do texto quando ativo */
+  border-bottom: 1px solid #7A306C;
 }
 
 .middle-content{
@@ -330,22 +329,38 @@ hr{
   font-size: 18px;
 }
 .middle-content dd {
-  max-height: 0; /* Inicialmente, define a altura como 0 */
-  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a altura */
-  opacity: 0; /* Configura a opacidade para 0 */
-  transition: max-height 0.5s ease, opacity 0.5s ease; /* Adiciona uma transição suave de altura e opacidade */
+  max-height: 0; 
+  overflow: hidden; 
+  opacity: 0; 
+  transition: max-height 0.5s ease, opacity 0.5s ease; 
 }
 .middle-content dd.active {
-  max-height: 1000px; /* Define a altura máxima para mostrar todo o conteúdo */
-  opacity: 1; /* Configura a opacidade para 1 */
+  max-height: 100px; 
+  opacity: 1; 
 }
 
 
 
+@media (max-width: 1250px) {
+  .description-type h1 {
+    font-size: 25px;
+  }
+  .container-colors h2{
+    font-size: 18px;
+  }
+  .container-sizer h2{
+      font-size: 18px;
+  }
+  .container-cart button {
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+      
+}
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 1150px) {
   .top-content {
     flex-direction: column; 
   }
@@ -363,30 +378,22 @@ hr{
   .middle-content{
     display: none;
   }
+  .container-cart button {
+    width: 300px;
+  }
   
   
   
 }
 
 
-/* @media (max-width: 1340px) {
+@media (max-width: 700px) {
   
-
-  .top-content {
-    flex-direction: column; 
+  .container-cart{
+    display: flex;
+    justify-content: center;
   }
 
-  .image-section,
-  .description {
-    max-width: 100%;
-  }
-
-  .img-head {
-    width: 100%; 
-  }
-
-  .size-button {
-    width: calc(50% - 5px); 
-  }
+  
 }
- */
+
