@@ -9,6 +9,7 @@ import Debounce from './modules/debounce.js';
 import Slider from './modules/slider.js';
 import SvgHeart from './modules/SvgHeat.js';
 import AutomaticScroll from './modules/automatic-scroll.js';
+import Modal from './modules/modal.js';
 
 
 const imgEvidence = new ImgEvidence();
@@ -24,6 +25,7 @@ const dropdowns = new Dropdowns();
 const debounce = new Debounce();
 const slider = new Slider();
 const automaticScroll = new AutomaticScroll();
+const modal = new Modal();
 
 
 

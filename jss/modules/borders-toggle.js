@@ -2,7 +2,7 @@ export default class BordersToggle {
     constructor() {
       this.circles = document.querySelectorAll(".div-circles > div");
       this.selectedCircle = this.circles[0];
-      this.selectedCircle.classList.add("selected", "shrunk"); // Adiciona a classe "shrunk"
+      this.selectedCircle.classList.add("selected", "shrunk");
       this.circles.forEach((circle) => {
         circle.addEventListener("click", () => this.toggleBorder(circle));
       });
