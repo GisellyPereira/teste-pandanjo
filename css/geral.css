@@ -321,7 +321,7 @@ hr{
   margin-top: 5rem;
 }
 .div-midlle{
-  height: 180px;
+  height: 200px;
 }
 .div-composition{
   display:grid;
@@ -336,13 +336,34 @@ hr{
   max-height: 0; 
   overflow: hidden; 
   opacity: 0; 
-  transition: max-height 0.5s ease, opacity 0.5s ease; 
+  transition: opacity 0.5s ease; 
 }
 .middle-content dd.active {
   max-height: 180px; 
   opacity: 1; 
 }
+.div-automatic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  width: 100%;
+  align-self: center;
+  transition: transform 0.6s ease-in-out;
+  padding: 30px 0;
+}
 
+.automatic-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+}
+
+.div-automatic-title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 
 
 @media (max-width: 1250px) {

@@ -8,6 +8,7 @@ import Dropdowns from './modules/dropdowns.js';
 import Debounce from './modules/debounce.js';
 import Slider from './modules/slider.js';
 import SvgHeart from './modules/SvgHeat.js';
+import AutomaticScroll from './modules/automatic-scroll.js';
 
 
 const imgEvidence = new ImgEvidence();
@@ -22,5 +23,7 @@ const mask = new Mask();
 const dropdowns = new Dropdowns();
 const debounce = new Debounce();
 const slider = new Slider();
+const automaticScroll = new AutomaticScroll();
+
 
 
