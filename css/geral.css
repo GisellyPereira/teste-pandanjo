@@ -358,6 +358,7 @@ hr{
   position: relative;
   overflow: hidden;
   height: 100px;
+  display: none;
 }
 
 .div-automatic-title {
@@ -405,6 +406,9 @@ hr{
   }
   .container-cart button {
     width: 300px;
+  }
+  .automatic-scroll {
+    display: block;
   }
   
   
