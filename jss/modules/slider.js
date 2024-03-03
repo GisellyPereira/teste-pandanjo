@@ -22,6 +22,7 @@ export default class Slider {
     this.slideWrapper.addEventListener("touchend", this.endDrag.bind(this));
   }
 
+ 
   loadProducts() {
     fetch("../../slideapi.json")
       .then((response) => response.json())
@@ -29,20 +30,19 @@ export default class Slider {
         const productList = document.getElementById("product-list");
 
         data.forEach((product) => {
-            const li = document.createElement("li");
-            li.classList.add("product-item");
-        
-            const discountDiv = document.createElement("div");
-            discountDiv.classList.add("discount");
-        
-            const discountP = document.createElement("p");
-            discountP.textContent = product.obs;
-            discountP.classList.add("discount-text");
-        
-            if (product.obs.trim().toLowerCase() === "novo") {
-                discountP.classList.add("new-item");
-            }
-            
+          const li = document.createElement("li");
+          li.classList.add("product-item");
+
+          const discountDiv = document.createElement("div");
+          discountDiv.classList.add("discount");
+
+          const discountP = document.createElement("p");
+          discountP.textContent = product.obs;
+          discountP.classList.add("discount-text");
+
+          if (product.obs.trim().toLowerCase() === "novo") {
+            discountP.classList.add("new-item");
+          }
 
           const svgHeart = document.createElementNS(
             "http://www.w3.org/2000/svg",
@@ -90,9 +90,47 @@ export default class Slider {
           li.appendChild(productName);
           li.appendChild(productPrice);
           productList.appendChild(li);
+
+          const overlayDiv = document.createElement("div");
+          overlayDiv.classList.add("image-overlay");
+          overlayDiv.style.height = `${img.offsetHeight - 78}px`;
+
+          overlayDiv.classList.add("slide-in"); 
+          const blueDiv = document.createElement("div");
+          blueDiv.classList.add("blue-background");
+
+          const button1 = document.createElement("button");
+          button1.textContent = "Adicionar ao carrinho";
+          button1.classList.add("custom-button-car"); 
+          const button2 = document.createElement("button");
+          button2.textContent = "Ver produto";
+          button2.classList.add("custom-button-look");
+          blueDiv.appendChild(button1);
+          blueDiv.appendChild(button2);
+
+          overlayDiv.appendChild(blueDiv);
+
+          li.addEventListener("mouseenter", () => {
+            li.appendChild(overlayDiv);
+          });
+
+          li.addEventListener("mouseleave", () => {
+            overlayDiv.remove();
+          });
+
+          overlayDiv.addEventListener("mouseenter", (event) => {
+            event.stopPropagation();
+          });
+
+          overlayDiv.addEventListener("mouseleave", () => {
+            overlayDiv.remove();
+          });
         });
       });
-  }
+}
+
+
+
 
   attachHeartClickEvent() {
     this.slideWrapper.addEventListener("click", (event) => {
