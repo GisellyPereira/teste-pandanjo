@@ -410,19 +410,21 @@ hr{
   .automatic-scroll {
     display: block;
   }
-  
-  
-  
 }
 
 
 @media (max-width: 700px) {
-  
   .container-cart{
     display: flex;
     justify-content: center;
   }
-
+  .menu-ul li a{
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  .li-selecion {
+    font-size: 15px;
+  }
   
 }
 

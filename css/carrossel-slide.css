@@ -119,6 +119,10 @@
     }
   }
   
+  .image-overlay-mobile {
+    display: none;
+    position: relative;
+  }
 .discount {
     position: absolute;
     display: flex;
@@ -229,8 +233,8 @@
         right: 12%;
     }
     .image-overlay {
-       position: relative;
-       
+        display: none;
+      
       
     }
     .blue-background { 
@@ -258,6 +262,10 @@
         animation-name: none;
         transform: translateY(0); 
     }
+    .image-overlay-mobile {
+        display: block;
+      }
+
    
 }
 
