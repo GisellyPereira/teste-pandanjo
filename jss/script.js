@@ -10,6 +10,7 @@ import Slider from './modules/slider.js';
 import SvgHeart from './modules/SvgHeat.js';
 import AutomaticScroll from './modules/automatic-scroll.js';
 import Modal from './modules/modal.js';
+import Toast from './modules/Toast.js';
 
 
 const imgEvidence = new ImgEvidence();
@@ -26,6 +27,9 @@ const debounce = new Debounce();
 const slider = new Slider();
 const automaticScroll = new AutomaticScroll();
 const modal = new Modal();
+const toast = new Toast();
+
+
 
 
 
