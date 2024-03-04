@@ -108,8 +108,7 @@ export default class Slider {
               blueDiv.appendChild(button2);
       
               overlayDiv.appendChild(blueDiv);
-      
-              // Adicionando a nova div para telas menores que 700px
+
               const overlayDivMobile = overlayDiv.cloneNode(true);
               overlayDivMobile.classList.add("image-overlay-mobile");
               li.appendChild(overlayDivMobile);

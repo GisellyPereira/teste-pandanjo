@@ -1,4 +1,4 @@
-import SvgHeart from '../modules/SvgHeat';
+import SvgHeart from './SvgHeat';
 
 export default class ImgEvidence {
   constructor() {
