@@ -1,4 +1,5 @@
 
+
 # Teste de E-Commerce Pandanjo 🐼
 
 ## :book: Sobre o projeto
@@ -27,5 +28,11 @@ Foi criado um arquivo JSON para simular uma API e renderizar o slide.
 2. Abra o terminal na pasta do projeto.
 3. Utilize o Live Server para rodar o projeto localmente.
 4. Execute `npm run dev` para observar o comportamento do projeto.
+   
+## :mag: Resultado
+- Link do deploy: [https://main--teste-pandanjo.netlify.app/](https://main--teste-pandanjo.netlify.app/)
+  
 
-Feito com 💜!
+![img-ecommerce](https://github.com/GisellyPereira/teste-pandanjo/assets/116305443/c189d4be-31ea-436f-8e58-27957f61ce5c)   
+
+<div align="center">Feito com 💜!</div>
